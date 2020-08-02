@@ -1,0 +1,25 @@
+{{> partials/header }}
+
+
+<div class="row my-5">
+  
+  {{# gallery }}
+  <div class="col-lg-4 my-3" >
+    <div class="card" >
+      <img src="{{ img_url }}" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-text">Project Name : <small>{{ projectname }}</small></h5>
+        <h5 class="card-text">Font Format: <small>{{ fontformat1 }}</small><br>
+                                            <small>{{ fontformat2 }}</small><br>
+                                             <small>{{ fontformat3 }}</small></h5>
+
+        <h5 class="card-text">Owner : <small>{{ projectowner }}</small></h5>
+        <h5 class="card-text">Type : <small>{{ projecttype }}</small></h5>
+      </div>
+    </div>
+  </div>
+  {{/ gallery  }}
+
+</div>
+
+{{> partials/footer }}

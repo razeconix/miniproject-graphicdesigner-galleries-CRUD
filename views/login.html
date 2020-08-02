@@ -1,0 +1,21 @@
+{{> partials/header }}
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <h1 class="mt-3">Login</h1>
+
+        {{# errorMessage }}
+        <div class="alert alert-danger">{{ . }}</div>
+        {{/ errorMessage }}
+
+        <form method="POST">
+            <label>Username:</label>
+            <input name="username" class="form-control mb-3">
+            <label>Password:</label>
+            <input name="password" type="password" class="form-control mb-3">
+            <input type="submit" class="btn btn-primary mb-3">
+        </form>
+    </div>
+</div>
+
+{{> partials/footer }}

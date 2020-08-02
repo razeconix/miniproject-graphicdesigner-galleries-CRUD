@@ -1,0 +1,37 @@
+{{> partials/header }}
+
+<h1 class="mt-3">Add new Project</h1>
+
+<form method="POST">
+
+    <label>Project Name:</label>
+    <input name="projectname" class="form-control mb-3" value="{{ projectname }}">
+    <label>Type :
+        <input list="type" name="projecttype" class="form-control mb-3" value="{{ projecttype }}"/></label>
+        <datalist id="type" >
+            <option value="Infographic">
+                <option value="Poster">
+                <option value="Logo">
+                <option value="Typography">
+                <option value="Packaging">
+        </datalist>   
+    <br>
+    <label>Font Format 1:</label>
+    <input name="fontformat1" class="form-control mb-3" value="{{ fontformat1 }}">
+    <label>Font Format 2:</label>
+    <input name="fontformat2" class="form-control mb-3" value="{{ fontformat2 }}">
+    <label>Font Format 3:</label>
+    <input name="fontformat3" class="form-control mb-3" value="{{ fontformat3 }}">
+    <label>Owner :</label>
+    <input name="projectowner" class="form-control mb-3" value="{{ projectowner }}">
+    <label>Image URL:</label>
+    <input name="img_url" class="form-control mb-3" value="{{ img_url }}">
+
+    <input type="submit" class="btn btn-primary mb-3">
+
+
+</form>
+
+  
+
+{{> partials/footer }}
